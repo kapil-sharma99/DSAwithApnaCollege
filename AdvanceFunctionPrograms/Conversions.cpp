@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int binaryToDecimal(int n)
@@ -29,13 +29,27 @@ int octalToDecimal(int n)
 	return ans;
 }
 
+int hexadecimalToDecimal(string n)
+{
+	int ans = 0;
+	int x = 1;
+
+	int s = n.size();
+	for (int i = s - 1; i >= 0; i--)
+	{
+	}
+}
+
 int32_t main()
 {
 	int n;
 	cin >> n;
+	string hexa;
+	cin >> hexa;
 
 	cout << "BinaryToDecimal: " << binaryToDecimal(n) << endl;
 	cout << "OctalToDecimal: " << octalToDecimal(n) << endl;
+	cout << "HexadecimalToDecimal: " << hexadecimalToDecimal(hexa) << endl;
 
 	return 0;
 }
