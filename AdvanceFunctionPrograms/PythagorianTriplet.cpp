@@ -32,6 +32,7 @@ bool check(int x, int y, int z)
 int32_t main()
 {
 	int x, y, z;
+	cout << "Enter the value of x, y, z: " << endl;
 	cin >> x >> y >> z;
 
 	if (check(x, y, z))
