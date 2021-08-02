@@ -14,6 +14,7 @@ int sum(int n)
 int32_t main()
 {
 	int n;
+	cout << "Enter the value of n: " << endl;
 	cin >> n;
 
 	cout << sum(n) << endl;
