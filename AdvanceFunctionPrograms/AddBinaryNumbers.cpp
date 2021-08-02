@@ -102,6 +102,7 @@ int addBinary(int a, int b)
 int main()
 {
 	int a, b;
+	cout << "Enter the value of a and b: " << endl;
 	cin >> a >> b;
 
 	cout << "After Addtion: " << addBinary(a, b) << endl;
