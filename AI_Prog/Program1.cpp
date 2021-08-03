@@ -45,7 +45,7 @@ void Hash::displayHash()
 
 int main()
 {
-	int a[] = {};
+	int a[] = {343, 342, 341};
 	int n = sizeof(a) / sizeof(a[0]);
 
 	Hash h(7);
