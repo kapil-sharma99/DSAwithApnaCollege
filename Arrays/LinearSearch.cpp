@@ -9,11 +9,8 @@ int linearSearch(int n, int arr[], int key)
 		{
 			return i;
 		}
-		else
-		{
-			return -1;
-		}
 	}
+	return -1;
 }
 
 int main()
@@ -35,6 +32,6 @@ int main()
 	}
 	else
 	{
-		cout << "Element found at position: " << res << endl;
+		cout << "Element found at position: " << res + 1 << endl;
 	}
 }
