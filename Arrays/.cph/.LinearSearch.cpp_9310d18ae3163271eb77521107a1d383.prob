@@ -1,0 +1,1 @@
+{"name":"Local: LinearSearch","url":"d:\\DSAinC++\\Arrays\\LinearSearch.cpp","tests":[{"id":1628411381680,"input":"5\n10 20 30 40 50\n30","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSAinC++\\Arrays\\LinearSearch.cpp","group":"local","local":true}
