@@ -1,0 +1,1 @@
+{"name":"Local: SumOfAllSubarrays","url":"d:\\DSAinC++\\Arrays\\AdvanceArrayProblem\\SumOfAllSubarrays.cpp","tests":[{"id":1629012601773,"input":"5\n1 2 0 7 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSAinC++\\Arrays\\AdvanceArrayProblem\\SumOfAllSubarrays.cpp","group":"local","local":true}
