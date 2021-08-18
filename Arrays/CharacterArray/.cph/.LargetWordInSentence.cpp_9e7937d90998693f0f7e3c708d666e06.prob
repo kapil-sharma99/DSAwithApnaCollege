@@ -1,0 +1,1 @@
+{"name":"Local: LargetWordInSentence","url":"d:\\DSAinC++\\Arrays\\CharacterArray\\LargetWordInSentence.cpp","tests":[{"id":1629283661155,"input":"10\nDo or Die","output":"3\nDie"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSAinC++\\Arrays\\CharacterArray\\LargetWordInSentence.cpp","group":"local","local":true}
