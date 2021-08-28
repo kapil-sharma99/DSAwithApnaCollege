@@ -10,15 +10,14 @@ void swap(int *a, int *b)
 
 int main()
 {
-	int a = 20;
-	int b = 40;
+	int a = 20, b = 40;
 
 	cout << "Before Swapping: " << endl;
 	cout << a << endl
-			 << b << endl;
+		 << b << endl;
 
 	swap(&a, &b);
 	cout << "After Swapping: " << endl;
 	cout << a << endl
-			 << b << endl;
+		 << b << endl;
 }
