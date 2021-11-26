@@ -112,6 +112,26 @@ node* reverseUsingRecursion(node* &head) {
   return newHead;
 }
 
+node* reverseK(node* &head, int k) {
+  node* prevPtr = NULL;
+  node* currPtr = head;
+  node* nextPtr;
+
+  int counter = 0;
+
+  while(currPtr != NULL && counter < k) {
+    nextPtr = currPtr->next;
+    currPtr->next = prevPtr;
+    prevPtr = currPtr;
+    currPtr = nextPtr;
+    counter++;
+  }
+  if(nextPtr != NULL) {
+    head->next = reverseK(nextPtr, k); 
+  }
+  return prevPtr;
+}
+
 int main() {
   node* head = NULL;
   insertAtTail(head, 1);
@@ -137,5 +157,20 @@ int main() {
   node* newHead = reverseUsingRecursion(head);
   cout << "After reversing: " << endl;
   display(newHead);
+
+
+  node* head1 = NULL;
+  insertAtTail(head1, 1);
+  insertAtTail(head1, 2);
+  insertAtTail(head1, 3);
+  insertAtTail(head1, 4);
+  insertAtTail(head1, 5);
+  insertAtTail(head1, 6);
+  insertAtTail(head1, 7);
+  insertAtTail(head1, 8);
+  cout << "Before K reversal: " << endl;
+  node* nowNewHead = reverseK(head1, 2);
+  cout << "After K reversal: " << endl;
+  display(nowNewHead);
   return 0;
 }
