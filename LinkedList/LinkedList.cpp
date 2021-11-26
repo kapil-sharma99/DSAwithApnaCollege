@@ -12,6 +12,12 @@ class node {
     };
 };
 
+void insertAtHead(node* &head, int val) {
+  node* n = new node(val);
+  n->next = head;
+  head = n;
+}
+
 void insertAtTail(node* &head, int val) {
 
   node* n = new node(val);
@@ -26,6 +32,17 @@ void insertAtTail(node* &head, int val) {
     temp = temp->next;
   }
   temp->next = n;
+}
+
+bool search(node* head, int key) {
+  node* temp = head;
+  while(temp != NULL) {
+    if(temp->data == key) {
+      return true;
+    }
+    temp = temp->next;
+  }
+  return false;
 }
 
 void display(node* head) {
@@ -68,18 +85,57 @@ void deletion(node* &head, int val) {
 
 }
 
+node* reverseUsingIteration(node* &head) {
+  node* prevPtr = NULL;
+  node* currPtr = head;
+  node* nextPtr;
+
+  while(currPtr != NULL) {
+    nextPtr = currPtr->next;
+    currPtr->next = prevPtr;
+
+    prevPtr = currPtr;
+    currPtr = nextPtr;
+  }
+
+  return prevPtr;
+}
+
+node* reverseUsingRecursion(node* &head) {
+  if(head == NULL || head->next == NULL) {
+    return head;
+  }
+  node* newHead = reverseUsingRecursion(head->next);
+  head->next->next = head;
+  head->next = NULL;
+
+  return newHead;
+}
+
 int main() {
   node* head = NULL;
   insertAtTail(head, 1);
   insertAtTail(head, 2);
   insertAtTail(head, 3);
   insertAtTail(head, 4);
+  insertAtTail(head, 5);
+  insertAtTail(head, 6);
+  insertAtTail(head, 7);
+  insertAtTail(head, 8);
 
-  cout << "Before deletion: " << endl;
+  insertAtHead(head, 10);
+
+  cout << "Before Deletion: " << endl;
   display(head);
-  cout << "After Deletion: " << endl;
-  deletion(head, 3);
+  deletion(head, 4);
   deleteAtHead(head);
+  cout << "After Deletion: " << endl;
   display(head);
+
+  cout << search(head, 10) << endl;
+
+  node* newHead = reverseUsingRecursion(head);
+  cout << "After reversing: " << endl;
+  display(newHead);
   return 0;
 }
