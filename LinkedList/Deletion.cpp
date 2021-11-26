@@ -38,7 +38,26 @@ void display(node* head) {
   
 }
 
+void deleteAtHead(node* &head) {
+  if(head == NULL) {
+    return;
+  }
+  node *toDelete = head;
+  head = head->next;
+
+  delete toDelete;
+}
+
 void deletion(node* &head, int val) {
+  if(head == NULL) {
+    return;
+  }
+
+  if(head->next == NULL) {
+    deleteAtHead(head);
+    return;
+  }
+
   node* temp = head;
   while(temp->next->data != val) {
     temp = temp->next;
@@ -60,6 +79,7 @@ int main() {
   display(head);
   cout << "After Deletion: " << endl;
   deletion(head, 3);
+  deleteAtHead(head);
   display(head);
   return 0;
 }
