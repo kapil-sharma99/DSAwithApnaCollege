@@ -61,6 +61,7 @@ void deleteAtHead(node* &head) {
   }
   node *toDelete = head;
   head = head->next;
+  
 
   delete toDelete;
 }
