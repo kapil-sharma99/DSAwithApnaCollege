@@ -64,9 +64,9 @@ void deletePos(node* &head, int pos) {
     count++;
   }
 
-  temp->prev = temp->next;
+  temp->prev->next = temp->next;
   if(temp->next != NULL) {
-    temp->next = temp->prev;
+    temp->next->prev = temp->prev;
   }
 
   delete temp;
