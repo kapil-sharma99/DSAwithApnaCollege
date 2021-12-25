@@ -61,15 +61,15 @@ class Stack {
 };
 
 int main() {
-  Stack st;
+  Stack st1;
 
-  st.push(1);
-  st.push(2);
-  st.push(3);
-  st.push(4);
+  st1.push(1);
+  st1.push(2);
+  st1.push(3);
+  st1.push(4);
 
-  cout << st.top() << endl;
-  st.pop();
-  cout << st.top() << endl;
+  cout << st1.top() << endl;
+  st1.pop();
+  cout << st1.top() << endl;
   return 0;
 }
