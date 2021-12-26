@@ -45,14 +45,14 @@ class Stack {
         q1.pop();
       }
 
-      int ans = q1.front();
-      q2.push(ans);
+      int answer = q1.front();
+      q2.push(answer);
 
       queue<int> temp = q1;
       q1 = q2;
       q2 = temp;
 
-      return ans;
+      return answer;
     }
 
     int size() {
