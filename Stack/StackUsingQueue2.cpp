@@ -1,5 +1,6 @@
 #include<iostream>
 #include<queue>
+#include<math.h>
 using namespace std;
 
 class Stack {
