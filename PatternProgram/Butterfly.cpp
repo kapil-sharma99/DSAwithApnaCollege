@@ -3,9 +3,9 @@ using namespace std;
 
 int main()
 {
-	int n;
-	cout << "Enter the value of n: " << endl;
-	cin >> n;
+	int n = 5;
+	// cout << "Enter the value of n: " << endl;
+	// cin >> n;
 
 	//for Upper Triangle
 	for (int i = 1; i <= n; i++)

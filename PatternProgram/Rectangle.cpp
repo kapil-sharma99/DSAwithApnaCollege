@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
 	int rows;
 	int columns;
 	cout << "Enter the value of rows: ";
