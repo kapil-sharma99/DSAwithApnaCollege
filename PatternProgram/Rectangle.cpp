@@ -4,9 +4,9 @@ using namespace std;
 int main() {
 	int rows;
 	int columns;
-	cout << "Enter the integer value of rows: ";
+	cout << "Enter the integer value of rows:- ";
 	cin >> rows;
-	cout << "Enter the integer value of columns: ";
+	cout << "Enter the integer value of columns:- ";
 	cin >> columns;
 	for (int i = 0; i < rows; i++)
 	{
